@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table, th, td {border: 1px solid;}
+        .Nome {background-color: red;}
+        .Email {background-color: green;}
+        .Telefone {background-color: blue;}
+        .Cargo {background-color: yellow;}
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Tabelas:</h1>
+
+    <table>
+        <caption><h3>Cadastro de clientes</h3></caption>
+
+        <colgroup>
+            <col class="Nome">
+            <col class="Email">
+            <col class="Telefone">
+            <col class="Cargo">
+        </colgroup>
+
+
+        <thead>
+    <tr>
+        <th>Nome:</th>
+        <th>Email:</th>
+        <th>Telefone:</th>
+        <th>Cargo:</th>
+    </tr>
+        </thead>    
+
+        <tbody>
+    <tr>
+        <td>Diogo</td>
+        <td>diogo@mail.com</td>
+        <td>(35) 9876-5432</td>
+        <td rowspan="4">Desenvolvedor Web</td>
+    </tr>
+
+    <tr>
+        <td>José</td>
+        <td>jose@mail.com</td>
+        <td>(35) 9876-5432</td>
+    </tr>
+
+    <tr>
+        <td>Solange</td>
+        <td>Solange@mail.com</td>
+        <td>(35) 9876-5432</td>
+    </tr>
+        </tbody>
+
+        <tfoot>
+    <tr>
+        <td colspan="3%">Total:2</td>
+    </tr>
+        </tfoot>
+        
+</table>
+    
+</body>
+
+</html>

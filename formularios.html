@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+</head>
+
+<body>
+
+    <form action="cadastro.php" method="get">
+
+    <fieldset>
+
+    <legend>Informações pessoais:</legend>   
+    
+    Nome: <br>
+    <input type="text" name="Nome" placeholder="Digite aqui seu nome:" autofocus maxlength="5"><br>    
+
+    Senha: <br>
+    <input type="password" placeholder="Digite aqui sua senha:" name="Senha"><br>
+    
+    E-mail: <br>
+    <input type="email" name="email" autocomplete="off" placeholder="seuemail@.com" required><br><br>
+
+    <input type="submit" name="btn-enviar" value="Enviar"><br><br><br>
+
+    Escolha arquivo de imagem: <br><br>
+
+    <input type="file" name="Imagem"><br><br>
+    <input type="hidden" name="id"><br><br>
+
+    Data: <br>
+
+    <input type="date" name="Data" min="2000-12-31"> <br><br>
+
+    Hora: <br>
+
+    <input type="time" name="Hora"> <br><br>
+
+    Mês e ano: <br>
+
+    <input type="month" name="Mês e ano"> <br><br>
+
+    Semana: <br>
+
+    <input type="week" name="Semana"> <br><br>
+
+    Data e Hora: <br>
+
+    <input type="datetime-local" name="Date e Hora"><br><br>
+
+    Mensagem: <br>
+
+    <textarea name="Mensagem" id="" cols="50" rows="10" spellcheck="true" placeholder="Digite aqui sua mensagem.."></textarea> <br><br>
+    <button type="button"> Clique </button><br><br>
+
+    Escolha seu Veículo: <br>
+
+    <Select name="Veículo">
+
+        <optgroup label="Carros:">
+
+        <option value="camaro">Camaro</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="mustang">Mustang</option>
+        <option value="porsche">Porche</option>
+
+        </optgroup>
+
+        <optgroup label="Motos:">Motos
+
+        <option value="ducati">Ducati</option>
+        <option value="mvagusta">MvAgusta</option>
+
+        </optgroup>
+
+    </Select> <br><br>
+
+    Escolha um curso: <br>
+
+    <input name="cursos" placeholder="Escolha seu curso.." list="lista-cursos">
+
+        <datalist id="lista-cursos">
+            <option value="HTML5"></option>
+            <OPTion value="CSS3"></OPTion>
+            <OPTion value="PHP"></OPTion>
+    </datalist> <br><br>
+
+    Url: <br>
+
+    <input type="url" placeholder="Digite aqui sua URL.." name="site" id=""> <br><br>
+
+    Search: <br>
+
+    <input type="search" placeholder="Digite aqui sua pesquisa.." name="pesquisa"> <br><br>
+
+    Telefone: <br>
+    <input type="tel" placeholder="Digite seu DDD + Telefone.." name="Telefone"> <br><br>
+
+    Time: <br>
+    <input type="radio" name="Time" value="cruzeiro" checked> Cruzeiro <br>
+    <input type="radio" name="Time" value="Flamengo"> Flamengo <br>
+    <input type="radio" name="Time" value="PSG"> PSG <br><br>
+
+    Cor(es): <br>
+    <input type="checkbox" name="Cores" value="vermelho"> vermelhos <br>
+    <input type="checkbox" name="Cores" value="Azul" checked> Azul <br>
+    <input type="checkbox" name="Cores" value="Preto"> Preto <br><br>
+
+    Quantidade: <br>
+    <input type="number" name="Quantidade" min="0" max="500"><br><br>
+    <input type="range" name="Quantidade"><br><br>
+    <input type="submit" name="btn-enviar" value="Enviar" step="10"><br><br><br>
+
+    Cores: <br>
+    <input type="color" name="cor">
+    
+</fieldset>
+
+</form>
+    
+</body>
+
+</html>
