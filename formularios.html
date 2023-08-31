@@ -10,8 +10,6 @@
 
 <body>
 
-    <form action="cadastro.php" method="get">
-
     <fieldset>
 
     <legend>Informações pessoais:</legend>   
@@ -30,7 +28,16 @@
     Escolha arquivo de imagem: <br><br>
 
     <input type="file" name="Imagem"><br><br>
-    <input type="hidden" name="id"><br><br>
+    <input type="hidden" name="id"><br>
+
+    <form id="form-cadastro" method="post" enctype="application/x-www-form-urlencoded" name="formulario-cadastro">
+        E-mail: <br>
+        <input type="email" placeholder="Digite aqui seu email.." name="email" required><br><br>
+        <input type="submit" name="cadastrar" formenctype="application/x-www-form-urlencoded" formmethod="get" formaction="cadastrar.php" value="cadastrar"><br><br>
+        <input type="submit" name="enviar-por-email" formenctype="application/x-www-form-urlencoded" formmethod="post" formaction="enviar.email.php" value="Enviar por email" formnovalidate><br><br>
+
+        Nome: <br>
+        <input type="text" placeholder="Digite seu nome.." name="nome" form="form-cadastro" ac><br><br>
 
     Data: <br>
 
@@ -67,6 +74,8 @@
         <option value="ferrari">Ferrari</option>
         <option value="mustang">Mustang</option>
         <option value="porsche">Porche</option>
+        <option value="audi">Audi</option>
+
 
         </optgroup>
 
@@ -74,6 +83,9 @@
 
         <option value="ducati">Ducati</option>
         <option value="mvagusta">MvAgusta</option>
+        <option value="kawasaki">kawasaki</option>
+        <option value="honda">Honda</option>
+
 
         </optgroup>
 
